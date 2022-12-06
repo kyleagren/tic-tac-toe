@@ -40,6 +40,15 @@ function gameOver(player) {
     }
     else {
         //it's a tie!
+        first.style.backgroundColor = "orange";
+        second.style.backgroundColor = "orange";
+        third.style.backgroundColor = "orange";
+        fourth.style.backgroundColor = "orange";
+        fifth.style.backgroundColor = "orange";
+        sixth.style.backgroundColor = "orange";
+        seventh.style.backgroundColor = "orange";
+        eighth.style.backgroundColor = "orange";
+        ninth.style.backgroundColor = "orange";
         gameEnded = true;
         instructions.innerText = "The game ends in a tie. Please click Reset if you would like to play again.";
     }
@@ -52,59 +61,99 @@ function checkWinner() {
     if (gameState[0] === 1 && gameState[1] === 1 && gameState[2] === 1) {
         winner = "human";
         first.style.backgroundColor = "green";
+        second.style.backgroundColor = "green";
+        third.style.backgroundColor = "green";
     }
     else if (gameState[3] === 1 && gameState[4] === 1 && gameState[5] === 1) {
-        first.style.backgroundColor = "green";
         winner = "human";
+        fourth.style.backgroundColor = "green";
+        fifth.style.backgroundColor = "green";
+        sixth.style.backgroundColor = "green";
     }
     else if (gameState[6] === 1 && gameState[7] === 1 && gameState[8] === 1) {
-        first.style.backgroundColor = "green";
         winner = "human";
+        seventh.style.backgroundColor = "green";
+        eighth.style.backgroundColor = "green";
+        ninth.style.backgroundColor = "green";
     }
     else if (gameState[0] === 1 && gameState[3] === 1 && gameState[6] === 1) {
-        first.style.backgroundColor = "green";
         winner = "human";
+        first.style.backgroundColor = "green";
+        fourth.style.backgroundColor = "green";
+        seventh.style.backgroundColor = "green";
     }
     else if (gameState[1] === 1 && gameState[4] === 1 && gameState[7] === 1) {
-        first.style.backgroundColor = "green";
         winner = "human";
+        second.style.backgroundColor = "green";
+        fifth.style.backgroundColor = "green";
+        eighth.style.backgroundColor = "green";
     }
     else if (gameState[2] === 1 && gameState[5] === 1 && gameState[8] === 1) {
-        first.style.backgroundColor = "green";
         winner = "human";
+        third.style.backgroundColor = "green";
+        sixth.style.backgroundColor = "green";
+        ninth.style.backgroundColor = "green";
     }
     else if (gameState[0] === 1 && gameState[4] === 1 && gameState[8] === 1) {
-        first.style.backgroundColor = "green";
         winner = "human";
+        first.style.backgroundColor = "green";
+        fifth.style.backgroundColor = "green";
+        ninth.style.backgroundColor = "green";
     }
     else if (gameState[2] === 1 && gameState[4] === 1 && gameState[6] === 1) {
-        first.style.backgroundColor = "green";
         winner = "human";
+        third.style.backgroundColor = "green";
+        fifth.style.backgroundColor = "green";
+        seventh.style.backgroundColor = "green";
     }
 //If any of these are true, computer wins.
     else if (gameState[0] === 2 && gameState[1] === 2 && gameState[2] === 2) {
         winner = "computer";
+        first.style.backgroundColor = "red";
+        second.style.backgroundColor = "red";
+        third.style.backgroundColor = "red";
     }
     else if (gameState[3] === 2 && gameState[4] === 2 && gameState[5] === 2) {
         winner = "computer";
+        fourth.style.backgroundColor = "red";
+        fifth.style.backgroundColor = "red";
+        sixth.style.backgroundColor = "red";
     }
     else if (gameState[6] === 2 && gameState[7] === 2 && gameState[8] === 2) {
         winner = "computer";
+        seventh.style.backgroundColor = "red";
+        eighth.style.backgroundColor = "red";
+        ninth.style.backgroundColor = "red";
     }
     else if (gameState[0] === 2 && gameState[3] === 2 && gameState[6] === 2) {
         winner = "computer";
+        first.style.backgroundColor = "red";
+        fourth.style.backgroundColor = "red";
+        seventh.style.backgroundColor = "red";
     }
     else if (gameState[1] === 2 && gameState[4] === 2 && gameState[7] === 2) {
         winner = "computer";
+        second.style.backgroundColor = "red";
+        fifth.style.backgroundColor = "red";
+        eighth.style.backgroundColor = "red";
     }
     else if (gameState[2] === 2 && gameState[5] === 2 && gameState[8] === 2) {
         winner = "computer";
+        third.style.backgroundColor = "red";
+        sixth.style.backgroundColor = "red";
+        ninth.style.backgroundColor = "red";
     }
     else if (gameState[0] === 2 && gameState[4] === 2 && gameState[8] === 2) {
         winner = "computer";
+        first.style.backgroundColor = "red";
+        fifth.style.backgroundColor = "red";
+        ninth.style.backgroundColor = "red";
     }
     else if (gameState[2] === 2 && gameState[4] === 2 && gameState[6] === 2) {
         winner = "computer";
+        third.style.backgroundColor = "red";
+        fifth.style.backgroundColor = "red";
+        seventh.style.backgroundColor = "red";
     }
     else if (gameState.includes(0) === false) {
         winner = "nobody";

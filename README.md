@@ -1,15 +1,9 @@
-# kyleagren.github.io
+# kyleagren.github.io for the original
 
-This is a project made as part of an application for a job at BYU OIT.
+I originally made this as part of an application to an on campus job. 
 
-Included are the 3 files needed to run the code, alternatively you can just navigate to kyleagren.github.io to encounter the running product. 
+I opted to tweak it and try to re-use it for something related to this class since I did work on it during this semester. 
 
-I left a few comments in there but most of it got cleaned up as I got things working how I wanted them to. 
+I did not spend a full 10 hours on this, I will admit. But I think I work slightly faster than the average person so I also don't feel super bad about it. 
 
-I spent 3 hours on the challenge, started at 10:50 ish in the morning and finished the coding portion a few minutes ago. Just cobbling together the repo, etc. 
-at this point. 
-
-I think if I had a bit more coding experience I would have tried to clean up the logic for determining the winner since it's a bit ugly in its current state.
-However it works and that's what I'm happiest about. 
-
-There is some repeated code in there that I'm not the happiest about, namely a long chain of if statements, but I couldn't figure out a better way to do it. 
+I considered fully rewriting it in React but after reading the requirements I didn't actually think it would be necessary.
